@@ -1,0 +1,85 @@
+# Site settings site.title
+title: CONG TY CP TRANSIMEX SAIGON
+url: "https://minh-vu.github.io"   # domain-name 
+baseurl: "/transimex"                      # repo-name 
+description: "CONG TY CP TRANSIMEX SAIGON"
+
+copyright_name: Transimex Saigon #footer
+header-img: img/home-bg.jpg
+email: nguyencongvu@gmail.com
+author: "Vu, Nguyen"
+
+language: "vi" #seo
+locale: "en-US"  #seo
+keyword: "vận chuyển" #seo
+og_image: "assets/img/small/logo.png" #seo
+comment_activate: false #set false or "" to disabled 
+
+#cdn
+cdn_url : "http://cdn.digitalife.top:8080"
+
+#social account --> EDIT 
+twitter_username: "vunc"
+github_username:  digitalife-top
+facebook_username:  "nguyencongvu"
+facebook_app_id:  "303370230021409"
+facebook_admins: "791078183"
+email_username:  nguyencongvu@gmail.com
+google_plus_id:  "101600677672081932719"
+google_form: "https://goo.gl/forms/UNBSCvJQMnKi3WRZ2" # POPUP contact-form 
+
+#footer contact vcard --> EDIT 
+contact_name: "CÔNG TY CP TRANSIMEX SAIGON" 
+contact_call_to: "+84937980003"
+contact_phone: "(84-8) 2220 2888"
+contact_fax: " (84-8) 2220 2889"
+contact_address: "Lầu 9-10, TMS|BUILDING, 172 Hai Bà Trưng, P. Đakao, Q.1"
+contact_city: "TP.Hồ Chí Minh"
+contact_country: "Vietnam"
+
+# Analytics --> EDIT if needed 
+# google_tracking_id:
+google_site_verification : "UQj93ERU9zgECodaaXgVpkjrFn9UrDMEzVamacSoQ8Y"
+bing_site_verification   :
+alexa_site_verification  :
+yandex_site_verification :
+google_custom_search     : 
+#google_custom_search     : "ibfrmo7jwwm" # syiovql90j8
+
+# ================ DO-NOT-EDIT =========================
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: none #date pretty ordinal 
+paginate: 5
+paginate_path: "blogs/page:num/"
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+
+gems: 
+  - jekyll-paginate
+  - jekyll-feed
+
+defaults:
+  -
+    scope:
+      path: "/"
+      type: "pages"
+    values:
+      layout: materialize/landingpage
+      author: "Vu, Nguyen"
+      #header-img: "img/contact-bg.jpg"
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: materialize/page
+      author: "Vu, Nguyen"
+      #header-img: "img/contact-bg.jpg"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: materialize/post
+      author: "Vu, Nguyen"
